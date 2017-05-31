@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery Essencial</title>
+    <link href="../css/estilos.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/meuScript.js" type="text/javascript"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#entrada").change(function(){
+                var texto = "O texto foi alterado para: "+$("#entrada").val();
+                $("#textospan").text(texto);
+                $("#dados").text("Teste de titulo por jQuery");
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+<div id="div1">
+    <h1 onclick="">Curso de jQuery - Evento Change</h1><hr>
+</div>
+
+<div id="div2">
+    <h1 id="teste"></h1>
+   <input id="entrada" type="text" value="texto padrao">
+    <span id="textospan">Texto nao modificado</span>
+
+</div>
+
+</body>
+</html>

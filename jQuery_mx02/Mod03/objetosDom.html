@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jquery - Treinamento Completo</title>
+
+    <link href="../css/estilos.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <style>
+        #exemplo {
+            border: 1px solid gray;
+            background-color: #b3c8d0;
+            font-size:14pt;
+            padding-left: 10pt;
+            padding-right: 10pt;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <h1 onclick="">Curso de jQuery - Ajax básico</h1><hr>
+
+    <div id="exemplo">
+        <p id="para2">Teste 1</p>
+        <p id="para1">Teste 2</p>
+        <p id="para3">Teste 3</p>
+        <p id="para4">Teste 4</p>
+
+    </div>
+
+    <button id="lerTexto">Ler Texto</button>
+    <button id="lerHTML">Ler HTML</button>
+
+</div>
+
+<script type="text/javascript">
+    $("document").ready(function() {
+
+        //$("#exemplo").children().css("border", "3px solid red");
+//        var elem = $("#para1");
+//        elem.prev().css("border", "3px solid red");
+//
+//        elem.next().css("border", "3px solid green");
+//
+//        elem.parents().css("border", "3px solid blue");
+
+        //$("#exemplo").find("#para3").css("border", "3px solid red");
+
+        var leftmargin = 0;
+        var border = 3;
+        $("#exemplo p").each(function(index, element) {
+            $(element).css("border", border+"px solid red")
+                    .css("margin-left", leftmargin);
+            border += 2;
+            leftmargin += 10;
+        });
+    });
+
+</script>
+
+</body>
+</html>

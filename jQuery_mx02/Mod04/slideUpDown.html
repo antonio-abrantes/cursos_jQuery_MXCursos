@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jquery - Treinamento Completo</title>
+
+    <link href="../css/estilos.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <style>
+        body{
+            background-color:#B3AEAE;
+        }
+        .box {
+            border: 1px solid gray;
+            background-color: #b3c8d0;
+            font-size:14pt;
+            min-height: 150px;
+            width: 500px;
+            text-align:justify;
+            float:left;
+            padding:10px;
+            margin-left:10px;
+        }
+        #botoes{
+            clear:both;
+            padding:10px;
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <h1 onclick="">Curso de jQuery - Slide UP/Slide Down</h1><hr>
+    <div id="Exemplo" class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate elit sit amet risus maximus
+        efficitur. Quisque faucibus lorem purus, eu porta dui pellentesque nec. Vivamus rhoncus non ante a porttitor. Duis molestie
+        turpis in convallis blandit. Aenean a tellus augue. Maecenas et lacus a justo aliquam tincidunt. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ornare facilisis erat, id tincidunt metus euismod nec.
+        Sed porta odio ut lacus pulvinar, nec mollis nibh convallis. In volutpat volutpat metus eget faucibus. Proin placerat fringilla
+        turpis vitae mollis. Suspendisse nec vulputate nisi, ac hendrerit risus. Fusce semper eu risus a porta. Nunc sed tellus justo.
+    </div>
+
+    <div id="botoes">
+        <button id="aplicar1">Aplicar UP</button>
+        <button id="aplicar2">Aplicar DOWN</button>
+        <button id="aplicar3">Alternar</button>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $("#aplicar1").click(function() {
+            $("#Exemplo").slideUp(1000);
+        });
+
+        $("#aplicar2").click(function() {
+            $("#Exemplo").slideDown("fast", "swing");
+        });
+
+        $("#aplicar3").click(function() {
+            $("#Exemplo").slideToggle("slow");
+        });
+    });
+
+</script>
+
+</body>

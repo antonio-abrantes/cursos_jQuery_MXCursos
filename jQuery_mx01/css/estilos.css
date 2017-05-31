@@ -1,0 +1,42 @@
+body{
+
+}
+#div1{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 680px;
+    height: auto;
+}
+h1{
+    text-align: center;
+}
+#tabulacao{
+    margin-left: auto;
+    margin-right: auto;
+}
+#tabulacao-resizer{
+    padding: 10px;
+}
+#botoes img{
+    margin-left: 25px;
+}
+.ui-progressbar{
+    position: relative;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.progress-label{
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: italic;
+    text-shadow: 1px 1px 0 #fff;
+}
+#menu{
+    width: 150px;
+}
